@@ -74,13 +74,66 @@
 	            <div class="row">
 	                <div class="col-md-6">
 	                    <div class="block">
-	                        <h1 class="wow fadeInDown" style="color: rgb(184, 159, 3); font-weight: bolder; float: left;" > EPIM &nbsp <h1 style="font-weight: bold;">2022</h1> </h1>
-                            <h2 class="wow fadeInDown" style="color: rgb(184, 159, 3); font-weight: bolder; float: left;" > Expo Pekan Ilmiah Mahasiswa</h2>
+	                        <h1 class="wow fadeInDown" style="color: rgb(226, 197, 12); font-weight: bolder; float: left;" > EPIM &nbsp <h1 style="font-weight: bold;">2022</h1> </h1>
+                            <h2 class="wow fadeInDown" style="color: rgb(226, 197, 12); font-weight: bolder; float: left;" > Expo Pekan Ilmiah Mahasiswa</h2>
                             <h2 style="font-weight: bold; color: white; clear: left;">Teknologi Informasi POLIJE</h2><br>
 	                        <p class="wow fadeInDown" data-wow-delay="0.3s" style="clear: left; text-align: justify; color: rgb(151, 150, 185);">Epim 2022 adalah Ajang Kompetisi bidang Teknologi Informasi tahunan tingkat SMK/SMA sederajat dan Expo Produk Mahasiswa, yang di adakan oleh Jurusan Teknologi Informasi Politeknik Negeri Jember, guna meningkatkan semangat kompetitif pelajar di indonesia</p>
 	                        <div class="wow fadeInDown" data-wow-delay="0.3s">
                                <!--<p style="font-size: 40px; font-family: verdana; padding-top: 15px;" id="jam"></p>--> 
-	                        	<a class="btn btn-default btn-home" href="#download" role="button" style="color: rgb(251, 223, 9);">Buku Panduan</a>
+                               
+<!-- Countdown Clock Container -->
+<div id="clockdiv" style="float: left; font-weight: bold;">
+    <!-- Days -->
+    <div>
+      <span id="daysBox"></span>
+      <div class="smalltext">Days</div>
+    </div>
+    <!-- Hours -->
+    <div>
+      <span id="hoursBox"></span>
+      <div class="smalltext">Hours</div>
+    </div>
+    <!-- Minutes -->
+    <div>
+      <span id="minsBox"></span>
+      <div class="smalltext">Minutes</div>
+    </div>
+    <!-- Seconds -->
+    <div>
+      <span id="secsBox"></span>
+      <div class="smalltext">Seconds</div>
+    </div>
+  </div>
+  
+  <!-- Script to generate countdown end date. Show new content when end date reached -->
+  <script>
+  function cdtd() {
+      var xmas = new Date("December 31, 2027 23:59:59");
+      var now = new Date();
+      var timeDiff = xmas.getTime() - now.getTime();
+      if (timeDiff <= 0) {
+          clearTimeout(timer);
+              // Run any code needed for countdown completion here
+              document.querySelector("#clockdiv").style.display="none";
+                  document.querySelector("#saleActive").style.display="none";
+                  document.querySelector("#saleEnded").style.display="block";				
+          }
+      var seconds = Math.floor(timeDiff / 1000);
+      var minutes = Math.floor(seconds / 60);
+      var hours = Math.floor(minutes / 60);
+      var days = Math.floor(hours / 24);
+        hours %= 24;
+      minutes %= 60;
+      seconds %= 60;
+      document.getElementById("daysBox").innerHTML = days;
+      document.getElementById("hoursBox").innerHTML = hours;
+      document.getElementById("minsBox").innerHTML = minutes;
+      document.getElementById("secsBox").innerHTML = seconds;
+      var timer = setTimeout('cdtd()',1000);
+  }
+  </script>
+  <script>cdtd();</script>
+	                        	<a class="btn btn-default btn-home" href="#download" role="button" style="border: none; background: none; float: left; color: rgb(226, 197, 12);">Buku Panduan</a>
 	                        </div>
                             
 	                    </div>
@@ -265,7 +318,7 @@
                             </div>
                                 -->
                         </div>
-                        <a class="btn btn-default btn-home" href="#download" role="button" style="border: none; background: none; margin-top: -1px;">Buku Panduan</a>
+                        <a class="btn btn-default btn-home" href="#download" role="button" style="border: none; background: none; margin-top: 5px; ">Buku Panduan</a>
                     </div>
                     
                 </div>
