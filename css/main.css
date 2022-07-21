@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background: radial-gradient(circle farthest-corner at 80% 20%,rgba(181, 142, 1, 0.69),  #27024D 20%, #27024D);
     font-size: 14px;
     font-weight: 300;
     line-height: 25px;
@@ -320,8 +321,11 @@ a:active {
 
 #hero-area {
   padding:180px 0;
-    background: -webkit-linear-gradient(left, rgb(17, 0, 52) 0%, rgb(33, 7, 69) 60%, rgb(171, 134, 0) 120%) ;
+   /* background: -webkit-linear-gradient(left, rgb(17, 0, 52) 0%, rgb(33, 7, 69) 60%, rgb(171, 134, 0) 120%) ; 
+   background: radial-gradient(circle farthest-corner at 80% 110%,
+   rgba(181, 142, 1, 0.749),  rgb(17, 0, 52) 40%, rgb(17, 0, 52)); */
 }
+/*
 #hero-area:before {
     content: "";
     position: absolute;
@@ -334,9 +338,11 @@ a:active {
     background: url(../img/header-overlay.png);
     opacity: 0.9;
 }
+*/
 #hero-area .block {
   padding-top: 100px;
 }
+
 /*--
 #hero-area .block h1 {
   margin-bottom: 35px;
@@ -394,8 +400,8 @@ a:active {
 }
 
 .navbar-default.animated {
-    background: -webkit-linear-gradient(left, rgb(17, 0, 52) 0%, rgb(33, 7, 69) 60%, rgb(171, 134, 0) 120%);
-    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.15);
+    background: -webkit-linear-gradient(left, #27024D 0%, #27024D 60%, rgba(171, 134, 0, 0.677) 120%);
+    box-shadow: 0 4px 4px -2px #27024D;
     padding:10px;
 }
 
@@ -758,7 +764,7 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
 
 #call-to-action {
     padding: 70px 0px;
-    background: -webkit-linear-gradient(left, rgb(17, 0, 52) 0%, rgb(33, 7, 69) 60%, rgb(171, 134, 0) 120%) ;
+   /* background: -webkit-linear-gradient(left, rgb(17, 0, 52) 0%, rgb(33, 7, 69) 60%, rgb(171, 134, 0) 120%) ; */
     color: #fff;
 }
 
@@ -790,7 +796,7 @@ background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#8ec6
 --*/
 
 #contact {
-    background: -webkit-linear-gradient(left, rgb(17, 0, 52) 0%, rgb(33, 7, 69) 60%, rgb(171, 134, 0) 120%);
+    /*background: -webkit-linear-gradient(left, rgb(17, 0, 52) 0%, rgb(33, 7, 69) 60%, rgb(171, 134, 0) 120%);*/
 }
 hr {
     border: none;
