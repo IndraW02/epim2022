@@ -912,7 +912,7 @@ hr {
     position: absolute;
     width: 47px;
     height: 47px;
-    right: -17px;
+    right: 102px;
     background-color: #27024d;
     border: 10px solid #f0b90b;
     top: 55px;
@@ -974,7 +974,7 @@ hr {
     border: #fff;
     position: relative;
     border-radius: 30px;
-    left: 20%;
+    left: 28%;
   }
   .content-c h4 {
     font-family: "Poppins";
@@ -1011,27 +1011,64 @@ hr {
       padding-right: 25px;
     }
 
+    .content{
+      width: 100%;
+    }
 
+    .content h4 {
+      font-size: 18px;
+    }
+    
+    .content p {
+      font-size: 20px;
+    }
   
-    /* Make sure that all arrows are pointing leftwards */
+    /* Make sure that all arrows are pointing leftwards 
     .container-tl::before {
       left: 60px;
       border: medium solid white;
       border-width: 10px 10px 10px 0;
       border-color: transparent white transparent transparent;
-    }
+    } */
   
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
       left: 15px;
+
     }
   
     /* Make all right containers behave like the left ones */
     .right {
       left: 0%;
     }
+
+    .left{
+      left: -29%;
+      
+    }
+
+    .content-c {
+      width: 100%;
+      height: 170px;
+      left: 0%;
+    }
+    .content-c h4 {
+      font-size: 16px;
+    }
+    .content-c p {
+      font-size: 20px;
+    }
+    .support{
+      margin-top: 10%;
+    }
   }
+
+
+/* Timeline Closed */
+
+
+/* Lokasi Start*/
 
   .lokasi-left{
     padding: 2px auto;
@@ -1076,7 +1113,7 @@ hr {
   color: #ffffff;
 }
 
-
+/* Lokasi Closed */
 #success,
 #error {
     display: none;
